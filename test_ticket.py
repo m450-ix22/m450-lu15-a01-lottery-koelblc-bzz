@@ -1,6 +1,10 @@
 import pytest
 
+from authenticate import load_people
+from lottery import create_ticket
+from money import transfer_money
 from numeric_input import read_int, read_float
+from person import Person
 from ticket import Ticket
 
 
@@ -28,3 +32,11 @@ def test_ticket_numbers():
     assert ticket.numbers == [1, 2, 3, 4, 5, 6]
     with pytest.raises(ValueError):
         ticket.joker = "invalid"
+
+def test_integration_ticket_creation(monkeypatch):
+    person = Person("TestUser", "password", 10.0)
+    inputs = iter(["10", "20", "30", "40", "12", "15", "2"])  # Dummy-Inputs
+    monkeypatch.setattr('builtins.input', lambda _: next(inputs))
+    create_ticket(person)
+    assert person.balance == 8.0  # 2 Euro abgezogen
+

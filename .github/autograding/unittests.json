@@ -16,5 +16,41 @@
     "function": "test_main_ticket",
     "timeout": 10,
     "points": 1
+  },
+    {
+    "name": "test_read_int_valid",
+    "function": "test_read_int_valid",
+    "timeout": 10,
+    "points": 1
+  },
+    {
+    "name": "test_read_int_out_of_range",
+    "function": "test_read_int_out_of_range",
+    "timeout": 10,
+    "points": 1
+  },
+    {
+    "name": "test_read_float_invalid",
+    "function": "test_read_float_invalid",
+    "timeout": 10,
+    "points": 1
+  },
+    {
+    "name": "test_ticket_numbers",
+    "function": "test_ticket_numbers",
+    "timeout": 10,
+    "points": 1
+  },
+    {
+    "name": "test_integration_ticket_creation",
+    "function": "test_integration_ticket_creation",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_transfer_money_overdraw",
+    "function": "test_transfer_money_overdraw",
+    "timeout": 10,
+    "points": 1
   }
 ]
