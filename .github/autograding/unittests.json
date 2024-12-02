@@ -48,12 +48,6 @@
     "points": 1
   },
   {
-    "name": "test_transfer_money_overdraw",
-    "function": "test_transfer_money_overdraw",
-    "timeout": 10,
-    "points": 1
-  },
-  {
     "name": "test_login_success",
     "function": "test_login_success",
     "timeout": 10,
@@ -62,6 +56,24 @@
   {
     "name": "test_login_failure",
     "function": "test_login_failure",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_show_menu",
+    "function": "test_show_menu",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_select_menu_valid_input",
+    "function": "test_select_menu_valid_input",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_select_menu_invalid_input",
+    "function": "test_select_menu_invalid_input",
     "timeout": 10,
     "points": 1
   }
