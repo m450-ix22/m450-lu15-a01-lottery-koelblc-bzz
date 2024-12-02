@@ -1,8 +1,6 @@
 import pytest
 
-from authenticate import load_people
 from lottery import create_ticket
-from money import transfer_money
 from numeric_input import read_int, read_float
 from person import Person
 from ticket import Ticket

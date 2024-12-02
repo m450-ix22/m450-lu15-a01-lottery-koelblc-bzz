@@ -52,5 +52,17 @@
     "function": "test_transfer_money_overdraw",
     "timeout": 10,
     "points": 1
+  },
+  {
+    "name": "test_login_success",
+    "function": "test_login_success",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_login_failure",
+    "function": "test_login_failure",
+    "timeout": 10,
+    "points": 1
   }
 ]
